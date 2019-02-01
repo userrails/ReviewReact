@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Blink from './Blink';
-import Navigation from './Navigation';
 import NavigationLinkRelatedContent from './NavigationLinkRelatedContent';
+import Header from './Header.jsx';
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Navigation />
+        <div>
+          <Header />
           <Blink />
           <NavigationLinkRelatedContent />
         </div>
