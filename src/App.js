@@ -11,7 +11,6 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          
           <Container>
             <NavigationLinkRelatedContent />
           </Container>
