@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import Blink from './Blink';
 import NavigationLinkRelatedContent from './NavigationLinkRelatedContent';
 import Header from './Header.jsx';
+import Container from 'react-bootstrap/Container';
 
 class App extends Component {
   render() {
@@ -11,8 +11,10 @@ class App extends Component {
       <Router>
         <div>
           <Header />
-          <Blink />
-          <NavigationLinkRelatedContent />
+          
+          <Container>
+            <NavigationLinkRelatedContent />
+          </Container>
         </div>
       </Router>
     );

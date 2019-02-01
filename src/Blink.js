@@ -4,7 +4,7 @@ class Blink extends Component {
   render () {
     return (
       <div>
-        <p>{new Date().toLocaleTimeString()}</p>
+        <span>{new Date().toLocaleTimeString()}</span>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import Blink from './Blink';
 
 class Header extends React.Component {
   render() {
@@ -22,6 +22,9 @@ class Header extends React.Component {
                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
               </NavDropdown>
             </Nav>
+            <div className="timerpos">
+              <Blink />
+            </div>
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button variant="outline-success">Search</Button>
