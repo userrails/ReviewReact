@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Row, Col, Form, Button, Card} from 'react-bootstrap';
+import { fakeAuth } from './services/fakeAuth';
 
 class Login extends Component {
    render() {
@@ -28,7 +29,7 @@ class Login extends Component {
                       <Form.Group controlId="formBasicChecbox">
                         <Form.Check type="checkbox" label="Check me out" />
                       </Form.Group>
-                      <Button variant="success" type="submit">
+                      <Button variant="success" type="submit" onClick={this.authenticate}>
                         Submit
                       </Button>
                     </Form>
